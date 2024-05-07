@@ -1,19 +1,16 @@
-import React from "react";
-
 function Footer() {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam
-        odit delectus ipsa quisquam magni iste qui beatae explicabo pariatur!
-        Animi veritatis excepturi molestiae eveniet ab, quisquam quae doloribus
-        vel!
-      </p>
-      <h1>Nasa Api</h1>
-      <button>
-        <i className="ri-expand-left-line"></i>
-      </button>
-    </div>
+    <>
+      <div className="fixed bottom-0 left-0 w-screen text-white flex  justify-between px-5 py-2">
+        <div className="text-3xl">
+          <h2>The Brutal Martian landscape</h2>
+          <h1>APOD PROJECT</h1>
+        </div>
+        <button>
+          <i className="fa-solid fa-circle-info text-black"></i>
+        </button>
+      </div>
+    </>
   );
 }
 
