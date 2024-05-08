@@ -1,6 +1,11 @@
-function SideBar() {
+import { useState } from "react";
+
+function SideBar({ handleToggle }) {
   return (
-    <div className="fixed inset-0 flex flex-col  bg-zinc-700 w-1/2 left-[50%] p-5 overflow-y-scroll">
+    <div
+      className="fixed inset-0 flex flex-col  bg-zinc-700 w-1/2 left-[50%] p-5 overflow-y-scroll cursor-pointer z-50"
+      onClick={handleToggle}
+    >
       <h2>The Brutal Martian landscape</h2>
       <div>
         <p>Description</p>
@@ -10,8 +15,10 @@ function SideBar() {
           vero voluptate?
         </p>
       </div>
-      <button className="fixed bottom-0 m-4">
-        <i className="fa-solid fa-arrow-right text-zinc-900 font-bold text-2xl"></i>
+      <button className="fixed bottom-0 m-4 p-5 " onClick={handleToggle}>
+        <i
+          className={`fa-solid fa-arrow-right text-zinc-900 font-bold text-2xl`}
+        ></i>
       </button>
     </div>
   );
